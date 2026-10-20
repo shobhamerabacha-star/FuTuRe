@@ -6,8 +6,8 @@
     "node": ">=20 <21"
   },
   "scripts": {
-    "dev": "node --watch src/server.js",
-    "start": "node src/server.js",
+    "dev": "node init && node --watch src/server.js",
+    "start": "node init && node src/server.js",
     "test": "vitest run",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "eslint src",
@@ -46,7 +46,7 @@
     "csrf-csrf": "^4.0.3",
     "dotenv": "^16.6.1",
     "double-metaphone": "^2.0.0",
-    "express": "^4.19.2",
+    "express": "^5.3.0",
     "express-rate-limit": "^7.5.0",
     "express-validator": "^7.3.1",
     "google-libphonenumber": "^3.2.46",
