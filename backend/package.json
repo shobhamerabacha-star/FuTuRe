@@ -6,8 +6,8 @@
     "node": ">=20 <21"
   },
   "scripts": {
-    "dev": "node --watch src/server.js",
-    "start": "node src/server.js",
+    "dev": "node init && node --watch src/server.js",
+    "start": "node init && node src/server.js",
     "test": "vitest run",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "eslint src",
@@ -66,7 +66,7 @@
     "winston": "^3.19.0",
     "winston-daily-rotate-file": "^5.0.0",
     "ws": "^8.20.0",
-    "zod": "^3.24.4"
+    "zod": "^4.6.7"
   },
   "optionalDependencies": {
     "@aws-sdk/client-sns": "^3.1140.0",
